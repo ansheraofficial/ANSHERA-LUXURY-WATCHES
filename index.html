@@ -25,7 +25,10 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.95)), url('https://images.unsplash.com/photo-1612817288484-6f916006741a?q=80&w=2070') center/cover;
+            background: #0a0a0a;
+            background-image: 
+                radial-gradient(circle at 20% 50%, #D4AF3711 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, #D4AF3708 0%, transparent 50%);
         }
         
         h1 {
@@ -52,20 +55,18 @@
         section { padding: 100px 0; }
         h2 { font-family: 'Cinzel', serif; font-size: 3rem; text-align: center; margin-bottom: 60px; }
         
-        .craftsmanship {
-            background: #111;
-        }
+        .craftsmanship { background: #111; }
         
         .parts-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
             margin-top: 50px;
         }
         
         .part-card {
             background: #0a0a0a;
-            padding: 30px;
+            padding: 50px 30px;
             text-align: center;
             border: 1px solid #222;
             transition: all 0.3s ease;
@@ -76,12 +77,10 @@
             transform: translateY(-10px);
         }
         
-        .part-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
+        .icon {
+            font-size: 4rem;
             margin-bottom: 20px;
-            filter: grayscale(30%);
+            color: #D4AF37;
         }
         
         .about-content { text-align: center; max-width: 800px; margin: 0 auto; font-size: 1.1rem; }
@@ -97,7 +96,6 @@
         @media (max-width: 768px) {
             h1 { font-size: 3rem; }
             h2 { font-size: 2rem; }
-            .tagline { font-size: 1.2rem; }
         }
     </style>
 </head>
@@ -115,25 +113,25 @@
         <div class="container">
             <h2>THE <span class="gold">CRAFTSMANSHIP</span></h2>
             <div class="about-content">
-                <p>ANSHERA watches are born from precision. Every gear, every jewel, every movement is a testament to Indian engineering.</p>
+                <p>ANSHERA watches are born from precision. Every component is a testament to Indian engineering.</p>
                 <p class="gold">We don't just assemble time. We engineer legacy.</p>
             </div>
             
             <div class="parts-grid">
                 <div class="part-card">
-                    <img src="https://images.unsplash.com/photo-1622434641406-a158123450f9?q=80&w=2006" alt="Movement">
-                    <h3 class="gold">SWISS-INSPIRED MOVEMENT</h3>
-                    <p>Precision engineered caliber, assembled in India</p>
+                    <div class="icon">⚙️</div>
+                    <h3 class="gold">PRECISION MOVEMENT</h3>
+                    <p>Swiss-inspired automatic caliber, hand-assembled in India with 40+ hour power reserve</p>
                 </div>
                 <div class="part-card">
-                    <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=1927" alt="Case">
+                    <div class="icon">🛡️</div>
                     <h3 class="gold">316L STAINLESS STEEL</h3>
-                    <p>Surgical grade case, built to last generations</p>
+                    <p>Surgical-grade case & bracelet. Built to last generations, polished to perfection</p>
                 </div>
                 <div class="part-card">
-                    <img src="https://images.unsplash.com/photo-1594534475808-b18fc33b045e?q=80&w=2070" alt="Sapphire">
+                    <div class="icon">💎</div>
                     <h3 class="gold">SAPPHIRE CRYSTAL</h3>
-                    <p>Scratch-resistant, anti-reflective coating</p>
+                    <p>Scratch-resistant sapphire glass with anti-reflective coating for ultimate clarity</p>
                 </div>
             </div>
         </div>
@@ -159,7 +157,7 @@
     <section id="contact">
         <div class="container" style="text-align: center;">
             <h2>PRE-BOOK <span class="gold">YOUR ANSHERA</span></h2>
-            <p style="margin-bottom: 30px;">Limited first edition pieces. Reserve yours now.</p>
+            <p style="margin-bottom: 30px;">First Edition launching soon. Limited pieces. Reserve now.</p>
             <a href="https://wa.me/917982213267" class="btn">WHATSAPP US</a>
             <br><br>
             <a href="mailto:anshera.official@gmail.com" class="btn">EMAIL US</a>
