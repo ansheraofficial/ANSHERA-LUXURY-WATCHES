@@ -7,11 +7,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
         
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
             background-color: #0a0a0a;
@@ -20,15 +16,8 @@
             line-height: 1.6;
         }
         
-        .gold {
-            color: #D4AF37;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+        .gold { color: #D4AF37; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
         
         header {
             height: 100vh;
@@ -36,7 +25,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1524805444758-089113d48a6d?q=80&w=1974') center/cover;
+            background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.95)), url('https://images.unsplash.com/photo-1612817288484-6f916006741a?q=80&w=2070') center/cover;
         }
         
         h1 {
@@ -46,11 +35,7 @@
             margin-bottom: 20px;
         }
         
-        .tagline {
-            font-size: 1.5rem;
-            font-weight: 300;
-            margin-bottom: 30px;
-        }
+        .tagline { font-size: 1.5rem; font-weight: 300; margin-bottom: 30px; }
         
         .btn {
             display: inline-block;
@@ -63,49 +48,51 @@
             transition: all 0.3s ease;
         }
         
-        .btn:hover {
-            background: #D4AF37;
-            color: #0a0a0a;
+        .btn:hover { background: #D4AF37; color: #0a0a0a; }
+        section { padding: 100px 0; }
+        h2 { font-family: 'Cinzel', serif; font-size: 3rem; text-align: center; margin-bottom: 60px; }
+        
+        .craftsmanship {
+            background: #111;
         }
         
-        section {
-            padding: 100px 0;
+        .parts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
         }
         
-        h2 {
-            font-family: 'Cinzel', serif;
-            font-size: 3rem;
+        .part-card {
+            background: #0a0a0a;
+            padding: 30px;
             text-align: center;
-            margin-bottom: 60px;
+            border: 1px solid #222;
+            transition: all 0.3s ease;
         }
         
-        .about-content {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 1.1rem;
+        .part-card:hover {
+            border: 1px solid #D4AF37;
+            transform: translateY(-10px);
         }
         
-        .founder {
-            margin-top: 60px;
-            text-align: center;
-        }
-        
-        .founder img {
-            width: 200px;
+        .part-card img {
+            width: 100%;
             height: 200px;
-            border-radius: 50%;
-            border: 3px solid #D4AF37;
             object-fit: cover;
             margin-bottom: 20px;
+            filter: grayscale(30%);
         }
         
-        footer {
-            background: #000;
-            padding: 40px 0;
-            text-align: center;
-            border-top: 1px solid #D4AF37;
+        .about-content { text-align: center; max-width: 800px; margin: 0 auto; font-size: 1.1rem; }
+        .founder { margin-top: 60px; text-align: center; }
+        
+        .founder img {
+            width: 200px; height: 200px; border-radius: 50%;
+            border: 3px solid #D4AF37; object-fit: cover; margin-bottom: 20px;
         }
+        
+        footer { background: #000; padding: 40px 0; text-align: center; border-top: 1px solid #D4AF37; }
         
         @media (max-width: 768px) {
             h1 { font-size: 3rem; }
@@ -119,10 +106,38 @@
         <div class="container">
             <h1>ANSH<span class="gold">ERA</span></h1>
             <p class="tagline">INDIA'S LUXURY TIMEPIECE BRAND</p>
-            <p class="tagline gold">MADE IN INDIA, FOR THE WORLD</p>
-            <a href="#about" class="btn">DISCOVER THE LEGACY</a>
+            <p class="tagline gold">ENGINEERED IN INDIA, FOR THE WORLD</p>
+            <a href="#craft" class="btn">DISCOVER THE CRAFT</a>
         </div>
     </header>
+
+    <section id="craft" class="craftsmanship">
+        <div class="container">
+            <h2>THE <span class="gold">CRAFTSMANSHIP</span></h2>
+            <div class="about-content">
+                <p>ANSHERA watches are born from precision. Every gear, every jewel, every movement is a testament to Indian engineering.</p>
+                <p class="gold">We don't just assemble time. We engineer legacy.</p>
+            </div>
+            
+            <div class="parts-grid">
+                <div class="part-card">
+                    <img src="https://images.unsplash.com/photo-1622434641406-a158123450f9?q=80&w=2006" alt="Movement">
+                    <h3 class="gold">SWISS-INSPIRED MOVEMENT</h3>
+                    <p>Precision engineered caliber, assembled in India</p>
+                </div>
+                <div class="part-card">
+                    <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=1927" alt="Case">
+                    <h3 class="gold">316L STAINLESS STEEL</h3>
+                    <p>Surgical grade case, built to last generations</p>
+                </div>
+                <div class="part-card">
+                    <img src="https://images.unsplash.com/photo-1594534475808-b18fc33b045e?q=80&w=2070" alt="Sapphire">
+                    <h3 class="gold">SAPPHIRE CRYSTAL</h3>
+                    <p>Scratch-resistant, anti-reflective coating</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="about">
         <div class="container">
@@ -130,7 +145,7 @@
             <div class="about-content">
                 <p>ANSHERA is not just a watch. It's a revolution. A statement that India can build the world's finest luxury timepieces.</p>
                 <br>
-                <p>Our mission is to put India on the global map of haute horlogerie. Every ANSHERA timepiece is crafted with precision, passion, and pride. For the ones who don't follow time, they define it.</p>
+                <p>Our mission is to put India on the global map of haute horlogerie. For the ones who don't follow time, they define it.</p>
                 
                 <div class="founder">
                     <img src="ABUL2026.jpeg" alt="Founder - ANSHERA">
@@ -143,8 +158,9 @@
 
     <section id="contact">
         <div class="container" style="text-align: center;">
-            <h2>CONNECT <span class="gold">WITH US</span></h2>
-            <a href="https://wa.me/91XXXXXXXXXX" class="btn">WHATSAPP US</a>
+            <h2>PRE-BOOK <span class="gold">YOUR ANSHERA</span></h2>
+            <p style="margin-bottom: 30px;">Limited first edition pieces. Reserve yours now.</p>
+            <a href="https://wa.me/917982213267" class="btn">WHATSAPP US</a>
             <br><br>
             <a href="mailto:anshera.official@gmail.com" class="btn">EMAIL US</a>
         </div>
