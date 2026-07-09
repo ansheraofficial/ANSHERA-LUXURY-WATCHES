@@ -25,6 +25,17 @@
   z-index: -1;
   filter: brightness(0.4);
 }
+        .logo-watermark {
+  position: fixed;
+  top: 25vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35%;
+  max-width: 400px;
+  opacity: 0.08;
+  z-index: 1;
+  pointer-events: none;
+}
         
         .gold { color: #D4AF37; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
@@ -182,6 +193,7 @@
     <video autoplay muted loop playsinline id="bg-video">
   <source src="background.mp4.mp4" type="video/mp4">
 </video>
+    <img src="anshera-logo.png" alt="ANSHE RA Logo" class="logo-watermark">
 </body>
 </html>
 
