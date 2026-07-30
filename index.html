@@ -67,43 +67,53 @@ ANSHERA's First Watch Launching Soon <br>
 <span>On 28th July | Model: ANS0001</span>
 </div>
 </div>
-  <!-- ANSHERA WATCH PRODUCT SECTION START -->
+<!-- ANSHERA PRODUCT SECTION START -->
 <style>
-.anshera-product {
-    background: #0a0a0a;
-    padding: 60px 20px;
+.anshera-premium {
+    background: linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 100%);
+    padding: 0 0 60px 0;
     color: #fff;
-    text-align: center;
     border: 2px solid #D4AF37;
-    box-shadow: 0 0 30px rgba(212, 175, 55, 0.6);
+    box-shadow: 0 0 40px rgba(212, 175, 55, 0.7);
     margin-bottom: 40px;
   }
-.product-title {
-    font-size: 36px;
+.top-bar {
+    background: linear-gradient(90deg, #D4AF37, #FFD700);
+    color: #000;
+    padding: 12px;
+    text-align: center;
     font-weight: bold;
-    margin-bottom: 8px;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+.section-title {
+    text-align: center;
+    padding: 40px 20px 20px;
+  }
+.section-title h2 {
+    font-size: 36px;
     color: #D4AF37;
     text-shadow: 0 0 15px rgba(212, 175, 55, 0.8);
+    margin-bottom: 8px;
   }
-.product-subtitle {
+.section-title p {
     font-size: 18px;
-    margin-bottom: 35px;
     color: #ccc;
     letter-spacing: 2px;
   }
+/* SLIDER */
 .watch-slider {
-    max-width: 550px;
+    max-width: 700px;
     margin: 0 auto 30px;
     border: 3px solid #D4AF37;
     border-radius: 15px;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 0 25px rgba(255, 215, 0, 0.7);
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
   }
 .watch-slider img {
     width: 100%;
     display: none;
-    background: #000;
   }
 .watch-slider img.active {
     display: block;
@@ -116,37 +126,62 @@ ANSHERA's First Watch Launching Soon <br>
     border: none;
     color: #000;
     font-size: 28px;
-    padding: 8px 16px;
+    padding: 10px 16px;
     cursor: pointer;
     border-radius: 50%;
     font-weight: bold;
   }
 .prev { left: 15px; }
 .next { right: 15px; }
-  
-.watch-details {
-    max-width: 650px;
-    margin: 0 auto 30px;
-    text-align: left;
-    line-height: 2;
-    font-size: 16px;
+
+/* PRODUCT DETAILS SECTION */
+.product-details {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 40px auto;
     padding: 20px;
-    border: 1px solid #D4AF37;
-    border-radius: 10px;
+    gap: 30px;
+    align-items: center;
   }
-.watch-details b { color: #D4AF37; font-size: 17px; }
+.box-image {
+    flex: 1 1 400px;
+  }
+.box-image img {
+    width: 100%;
+    border: 3px solid #D4AF37;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
+  }
+.details-box {
+    flex: 1 1 500px;
+    background: rgba(0,0,0,0.4);
+    border: 1px solid #D4AF37;
+    padding: 30px;
+    border-radius: 10px;
+    line-height: 2;
+  }
+.details-box b { color: #D4AF37; font-size: 17px; }
+.features-box {
+    background: rgba(0,0,0,0.4);
+    border-left: 4px solid #D4AF37;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+  }
+.features-box p { margin: 8px 0; }
 .price-box { margin: 25px 0; }
 .price-mrp {
     text-decoration: line-through;
     color: #999;
-    font-size: 18px;
-    margin-right: 12px;
+    font-size: 20px;
+    margin-right: 15px;
   }
 .price-sale {
     color: #D4AF37;
     font-weight: bold;
-    font-size: 28px;
-    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    font-size: 32px;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.6);
   }
 .whatsapp-btn {
     display: inline-block;
@@ -158,21 +193,26 @@ ANSHERA's First Watch Launching Soon <br>
     font-weight: bold;
     font-size: 18px;
     box-shadow: 0 0 20px rgba(37, 211, 102, 0.7);
-    transition: 0.3s;
   }
-.whatsapp-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px rgba(37, 211, 102, 0.9);
-  }
+@media(max-width: 768px){
+.product-details { flex-direction: column; }
+}
 </style>
 
-<div class="anshera-product">
-  <h2 class="product-title">ANSHERA ANS0001</h2>
-  <p class="product-subtitle">THE LEGEND COLLECTION</p>
+<div class="anshera-premium">
+  <!-- TOP GOLDEN BAR -->
+  <div class="top-bar">
+    🚚 Free Shipping Pan India | 💰 COD Available | 🛡️ 1 Year Warranty | 📄 GST Invoice | 🌍 Export & Bulk Orders Available
+  </div>
 
-  <!-- IMAGE SLIDER - AAPKI 15 PHOTOS -->
+  <div class="section-title">
+    <h2>ANSHERA ANS0001</h2>
+    <p>LUXURY REDEFINED</p>
+  </div>
+
+  <!-- 1. UPAR 15 PHOTOS KA SLIDER -->
   <div class="watch-slider">
-    <img src="A1.png" class="active" alt="Anshara Watch Box">
+    <img src="A1.png" class="active" alt="Anshara Watch">
     <img src="A2.png" alt="Anshara Watch">
     <img src="A3.png" alt="Anshara Watch">
     <img src="A4.png" alt="Anshara Watch">
@@ -185,33 +225,46 @@ ANSHERA's First Watch Launching Soon <br>
     <img src="A11.png" alt="Anshara Watch">
     <img src="A12.png" alt="Anshara Watch">
     <img src="A13.png" alt="Anshara Watch">
-    <img src="A14.png" alt="Anshara Watch Features">
-    <img src="A15.png" alt="Anshara Watch Wrist">
+    <img src="A14.png" alt="Anshara Watch">
+    <img src="A15.png" alt="Anshara Watch">
     
     <button class="slider-btn prev" onclick="changeSlide(-1)">❮</button>
     <button class="slider-btn next" onclick="changeSlide(1)">❯</button>
   </div>
 
-  <!-- WATCH DETAILS -->
-  <div class="watch-details">
-    <p><b>Brand:</b> ANSHERA</p>
-    <p><b>Model:</b> ANS0001</p>
-    <p><b>Made By:</b> Abul Ansari</p>
-    <p><b>Strap:</b> Genuine Leather Strap</p>
-    <p><b>Warranty:</b> 1 Year Warranty</p>
-    <p><b>Quality:</b> Badi bariki se kaam kiya gaya hai. Premium luxury finish aur classy design.</p>
-    
-    <div class="price-box">
-      <span class="price-mrp">MRP: ₹14,999</span>
-      <span class="price-sale">Now: ₹9,999 Only</span>
+  <!-- 2. NEECHE BOX PHOTO + DETAILS -->
+  <div class="product-details">
+    <!-- LEFT: BOX PHOTO -->
+    <div class="box-image">
+      <img src="A1.png" alt="Anshara Watch Box">
+    </div>
+
+    <!-- RIGHT: DETAILS -->
+    <div class="details-box">
+      <p><b>Brand:</b> ANSHERA</p>
+      <p><b>Model:</b> ANS0001</p>
+      <p><b>Made By:</b> Abul Ansari</p>
+      <p><b>Strap:</b> Genuine Leather Strap</p>
+      <p><b>Warranty:</b> 1 Year Warranty</p>
+
+      <div class="features-box">
+        <p>✓ Premium Quartz Movement</p>
+        <p>✓ 3D Sapphire Coated Glass</p>
+        <p>✓ Crafting Excellence Since 1988</p>
+      </div>
+
+      <p><b>Quality:</b> Crafted with precision and attention to detail. Premium luxury finishing with a classy and elegant design.</p>
+
+      <div class="price-box">
+        <span class="price-mrp">MRP: ₹14,999</span>
+        <span class="price-sale">Now: ₹9,999 Only</span>
+      </div>
+
+      <a href="https://wa.me/917982213267?text=Hi%20Sir,%20I%20want%20to%20order%20ANSHERA%20ANS0001" target="_blank" class="whatsapp-btn">
+        ORDER ON WHATSAPP
+      </a>
     </div>
   </div>
-
-  <!-- WHATSAPP BUTTON -->
-  <a href="https://wa.me/917982213267?text=Hi%20Sir,%20I%20want%20to%20buy%20ANSHERA%20ANS0001%20Watch" target="_blank" class="whatsapp-btn">
-    BUY ON WHATSAPP
-  </a>
-  <p style="margin-top:12px; font-size:14px; color:#ccc;">WhatsApp: 7982213267</p>
 </div>
 
 <script>
@@ -227,8 +280,8 @@ ANSHERA's First Watch Launching Soon <br>
   // Auto slide every 3 seconds
   setInterval(() => { changeSlide(1); }, 3000);
 </script>
-<!-- ANSHERA WATCH PRODUCT SECTION END -->
-
+<!-- ANSHERA PRODUCT SECTION END -->
+  
 <!-- STORY SECTION -->
 <div class="story">
 <h2>Our Legacy - The Story of ANSHERA</h2>
